@@ -9,7 +9,7 @@ import { Colors } from './constants/styles';
 
 const Stack = createNativeStackNavigator();
 
-function AuthStack() {
+const AuthStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -24,7 +24,7 @@ function AuthStack() {
   );
 }
 
-function AuthenticatedStack() {
+const AuthenticatedStack = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -38,7 +38,7 @@ function AuthenticatedStack() {
   );
 }
 
-function Navigation() {
+const Navigation = () => {
   return (
     <NavigationContainer>
       <AuthStack />
@@ -46,7 +46,7 @@ function Navigation() {
   );
 }
 
-export default function App() {
+ const App = () => {
   return (
     <>
       <StatusBar style="light" />
@@ -55,3 +55,5 @@ export default function App() {
     </>
   );
 }
+
+export default App;
